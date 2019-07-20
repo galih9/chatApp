@@ -1,29 +1,21 @@
 import React,{ Component } from 'react';
 import {
     View,
+    Text,
 } from 'react-native';
-import {
-    Card,
-    CardItem,
-    Body,
-    Text
-} from 'native-base';
 
 class ChatScreen extends Component{
     render(){
         return(
-            <Card>
-                <CardItem>
-                    <Body>
-                        <Text>
-                            ini nama
-                        </Text>
-                        <Text note>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </Text>
-                    </Body>
-                </CardItem>
-            </Card>
+            <View style={{width: "70%"}}>
+                <View style={{width : '80%',margin : 10, height : 60,backgroundColor:'#5cfc51',margin:10,borderRadius:3}}>
+                    <View style={{margin: 2}}>
+                        <Text style={{textAlign: 'left',fontWeight:'bold'}}>isi chat</Text>
+                        <Text style={{textAlign: 'right'}}>2019-08-19</Text>
+                        <Text style={{textAlign: 'left'}}>halu</Text>
+                    </View>
+                </View>
+            </View>
         )
     }
 } 
